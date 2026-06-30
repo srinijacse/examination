@@ -5,7 +5,7 @@ import Sidebar from "../components/Sidebar";
 import "../components/Navbar.css";
 import "../components/Sidebar.css";
 import "../styles/dashboard.css";
-
+import Footer from "../components/Footer";
 const Dashboard = () => {
 
   const [stats, setStats] = useState({
@@ -104,6 +104,7 @@ const Dashboard = () => {
         </div>
 
       </div>
+      <Footer />
 
     </div>
 

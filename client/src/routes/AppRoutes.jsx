@@ -14,6 +14,7 @@ import HallTickets from "../pages/HallTickets";
 import Profile from "../pages/Profile";
 import ActivityLogs from "../pages/ActivityLogs";
 import NotFound from "../pages/NotFound";
+import Subjects from "../pages/Subjects";
 
 const AppRoutes = () => {
   return (
@@ -100,6 +101,14 @@ const AppRoutes = () => {
             </ProtectedRoute>
           }
         />
+        <Route
+    path="/subjects"
+    element={
+        <ProtectedRoute roles={["admin"]}>
+            <Subjects />
+        </ProtectedRoute>
+    }
+/>
 
         {/* 404 */}
         <Route path="*" element={<NotFound />} />

@@ -23,6 +23,11 @@ const Sidebar = () => {
       path: "/dashboard"
     },
     {
+    title: "Subjects",
+    icon: <FaBook />,
+    path: "/subjects"
+},
+    {
       title: "Exams",
       icon: <FaBook />,
       path: "/exams"
